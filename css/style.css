@@ -1,0 +1,500 @@
+﻿/* ====== Global Reset ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+    .navbar a.nav-link {
+        color: #333;
+        font-weight: 600;
+        padding: 0.8rem 1rem;
+    }
+
+        .navbar a.nav-link:hover {
+            color: #e00122;
+            transition: 0.3s ease;
+        }
+
+/* Dropdowns show on hover */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    margin-top: 0;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 8rem 2rem 6rem 2rem;
+    color: white;
+    background: url('../images/campus.jpg') no-repeat center center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+}
+
+    .hero h1, .hero p {
+        text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 2rem auto;
+    }
+
+/* Resource strip */
+.resource-strip {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+    .resource-strip .btn {
+        flex: 0 0 auto;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+        font-weight: 600;
+        border-radius: 25px;
+        padding: 0.6rem 1.2rem;
+    }
+
+        .resource-strip .btn:hover {
+            background-color: #ffffff;
+            color: #e00122;
+            transform: scale(1.05);
+        }
+
+/* Cards section */
+.places-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.place-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+    .place-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .place-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .place-card h3 {
+        padding: 1rem;
+        color: #e00122;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .place-card p {
+        padding: 0 1rem 1rem;
+        color: #555;
+    }
+
+/* Responsive Cards */
+@media (max-width: 992px) {
+    .place-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .place-card {
+        flex: 1 1 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 3rem;
+}
+.places-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.place-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+    .place-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .place-card h3 {
+        padding: 1rem;
+        color: #e00122;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .place-card p {
+        padding: 0 1rem 1rem;
+        color: #555;
+    }
+
+    .place-card .btn {
+        margin-bottom: 1rem;
+    }
+
+@media (max-width: 992px) {
+    .place-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .place-card {
+        flex: 1 1 100%;
+    }
+}
+/* ===== Food Page Hero Banner ===== */
+.food-hero {
+    position: relative;
+    height: 60vh;
+    background: url('../images/food.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+}
+
+.hero-overlay {
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.35); /* subtle overlay for readability */
+    padding: 2rem 3rem;
+    border-radius: 12px;
+}
+
+    .hero-overlay h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.2rem;
+    }
+
+/* ===== Food Cards ===== */
+.food-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem 1rem;
+}
+
+.food-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .food-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .food-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+.food-card-body {
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+    .food-card-body h3 {
+        color: #e00122;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .food-card-body p {
+        color: #555;
+        margin-bottom: 1rem;
+    }
+
+    .food-card-body .btn {
+        background-color: #e00122;
+        color: white;
+        font-weight: 600;
+        border-radius: 25px;
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+    }
+
+        .food-card-body .btn:hover {
+            background-color: #aa001a;
+            color: white;
+            transform: scale(1.05);
+        }
+/* ===== Food Page Hero Banner ===== */
+.food-hero {
+    position: relative;
+    height: 60vh;
+    background: url('../images/food.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+}
+
+.hero-overlay {
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.35); /* subtle overlay for readability */
+    padding: 2rem 3rem;
+    border-radius: 12px;
+}
+
+    .hero-overlay h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.2rem;
+    }
+
+/* ===== Food Cards ===== */
+.food-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem 1rem;
+}
+
+.food-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    .food-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .food-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+.food-card-body {
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+    .food-card-body h3 {
+        color: #e00122;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .food-card-body p {
+        color: #555;
+        margin-bottom: 1rem;
+    }
+
+    .food-card-body .btn {
+        background-color: #e00122;
+        color: white;
+        font-weight: 600;
+        border-radius: 25px;
+        padding: 0.5rem 1.5rem;
+        text-decoration: none;
+    }
+
+        .food-card-body .btn:hover {
+            background-color: #aa001a;
+            color: white;
+            transform: scale(1.05);
+        }
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .food-card img {
+        height: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+}
+
+/* ===== Transport Page Hero Banner ===== */
+.transport-hero {
+    position: relative;
+    height: 60vh;
+    background: url('../images/bus.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.4);
+}
+
+/* ===== Transport Cards ===== */
+.transport-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem 1rem;
+}
+
+.transport-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.transport-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.transport-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.transport-card-body {
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.transport-card-body h3 {
+    color: #e00122;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.transport-card-body p {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.transport-card-body .btn {
+    background-color: #e00122;
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+}
+
+.transport-card-body .btn:hover {
+    background-color: #aa001a;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ===== Lindner Map Section ===== */
+.lindner-map {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.lindner-map h2 {
+    color: #e00122;
+    margin-bottom: 1.5rem;
+}
+
+.map-note {
+    margin-top: 1rem;
+    color: #555;
+    font-style: italic;
+}

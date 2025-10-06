@@ -1,0 +1,64 @@
+﻿@page
+@{
+    ViewData["Title"] = "Transportation & Shuttle Services";
+}
+
+<!-- Hero Banner -->
+<section class="transport-hero">
+    <div class="hero-overlay">
+        <h1>Transportation & Shuttle Services</h1>
+        <p>Navigate UC campus efficiently. Find shuttle stops, Metro routes, and parking options near Lindner Hall.</p>
+    </div>
+</section>
+
+<!-- Shuttle & Transport Cards -->
+<section class="transport-section">
+    <!-- UC Shuttle -->
+    <div class="transport-card">
+        <img src="/images/bus.jpg" alt="UC Shuttle">
+        <div class="transport-card-body">
+            <h3>UC Shuttle 🚌</h3>
+            <p>Campus shuttle routes connecting all major buildings and parking areas.</p>
+            <a class="btn btn-primary" href="https://www.uc.edu/about/admin-finance/facilities-management/departments/transportation-services/shuttle-services.html" target="_blank">View Routes</a>
+        </div>
+    </div>
+
+    <!-- Metro -->
+    <div class="transport-card">
+        <img src="/images/metro.jpg" alt="Metro">
+        <div class="transport-card-body">
+            <h3>Metro 🚋</h3>
+            <p>Metro access near campus for off-campus commuting and surrounding areas.</p>
+            <a class="btn btn-primary" href="https://www.uc.edu/about/admin-finance/facilities-management/departments/transportation-services/uc-metro.html" target="_blank">View Metro Info</a>
+        </div>
+    </div>
+
+    <!-- Parking -->
+    <div class="transport-card">
+        <img src="/images/parking.jpg" alt="Parking">
+        <div class="transport-card-body">
+            <h3>Parking 🅿️</h3>
+            <p>Find Lindner Hall parking locations and other campus parking facilities.</p>
+            <a class="btn btn-primary" href="https://www.uc.edu/about/admin-finance/facilities-management/departments/transportation-services.html" target="_blank">Parking Info</a>
+        </div>
+    </div>
+
+    <!-- Bike Share -->
+    <div class="transport-card">
+        <img src="/images/bike.jpg" alt="Bike Share">
+        <div class="transport-card-body">
+            <h3>Bike Share 🚴‍♂️</h3>
+            <p>UC bike share stations and racks near campus for eco-friendly commuting.</p>
+            <a class="btn btn-primary" href="https://www.uc.edu/about/admin-finance/facilities-management/departments/transportation-services.html" target="_blank">View Bike Stations</a>
+        </div>
+    </div>
+</section>
+
+<!-- Lindner Hall Map -->
+<section class="lindner-map">
+    <h2>Lindner Hall & Shuttle Stops</h2>
+    <iframe src="https://www.google.com/maps/d/embed?mid=YOUR_CUSTOM_MAP_ID"
+            width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+    <p class="map-note">Shuttle stops and parking areas around Lindner Hall.</p>
+</section>

@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MSIS Onboarding Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Fixed Top Navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" asp-area="" asp-page="/Index">MSIS Onboarding Portal</a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Campus Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Food">Dining & Food</a></li>
+                            <li><a class="dropdown-item" href="/Bus">Transportation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Onboarding Docs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/Onboarding">Onboarding Docs</a></li>
+                            <li><a class="dropdown-item" href="/TA">TA Documents</a></li>
+                            <li><a class="dropdown-item" href="/FAQs">FAQs</a></li>
+                            <li><a class="dropdown-item" href="/Newsletters">Newsletters</a></li>
+                            <li><a class="dropdown-item" href="/Slides">Slides</a></li>
+                            <li><a class="dropdown-item" href="/LindnerMap">Lindner Map</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Academic Sessions</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/AdvisorSessions">One-on-One with Advisor</a></li>
+                            <li><a class="dropdown-item" href="/MeetStudentAmbassadors">Meet Student Ambassadors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Learning & Career</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/BBK">BBK / Total Credits</a></li>
+                            <li><a class="dropdown-item" href="/LinkedIn">LinkedIn Courses</a></li>
+                            <li><a class="dropdown-item" href="/Careers">Possible Careers</a></li>
+                            <li><a class="dropdown-item" href="/GraduateCertificates">Graduate Certificates</a></li>
+                            <li><a class="dropdown-item" href="/ChoosingClasses">Choosing Classes</a></li>
+                            <li><a class="dropdown-item" href="/25Live">25Live Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 pt-5">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container text-center py-3">
+            &copy; 2025 - MSIS Onboarding Portal - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

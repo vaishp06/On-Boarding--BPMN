@@ -1,0 +1,95 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Explore Resources";
+}
+
+<!-- Hero Section -->
+<section class="hero text-center">
+    <h1>Explore MSIS Resources</h1>
+    <p>Quick access to essential onboarding and academic resources</p>
+
+    <!-- Resource Banner Strip -->
+    <div class="resource-strip d-flex justify-content-center gap-2 mt-3">
+
+        <!-- Campus Life -->
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownCampus" data-bs-toggle="dropdown" aria-expanded="false">
+                Campus Life
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownCampus">
+                <li><a class="dropdown-item" href="/Food">Dining & Food</a></li>
+                <li><a class="dropdown-item" href="/Bus">Transportation</a></li>
+            </ul>
+        </div>
+
+        <!-- Onboarding & Docs -->
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownDocs" data-bs-toggle="dropdown" aria-expanded="false">
+                Onboarding Docs
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownDocs">
+                <li><a class="dropdown-item" href="/Onboarding">Onboarding Docs</a></li>
+                <li><a class="dropdown-item" href="/TA">TA Documents</a></li>
+                <li><a class="dropdown-item" href="/FAQs">FAQs</a></li>
+                <li><a class="dropdown-item" href="/Newsletters">Newsletters</a></li>
+                <li><a class="dropdown-item" href="/Slides">Slides</a></li>
+                <li><a class="dropdown-item" href="/LindnerMap">Lindner Map</a></li>
+            </ul>
+        </div>
+
+        <!-- Academic Sessions -->
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownAdvisor" data-bs-toggle="dropdown" aria-expanded="false">
+                Academic Sessions
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownAdvisor">
+                <li><a class="dropdown-item" href="/AdvisorSessions">One-on-One with Advisor</a></li>
+                <li><a class="dropdown-item" href="/MeetStudentAmbassadors">Meet Student Ambassadors</a></li>
+            </ul>
+        </div>
+
+        <!-- Learning & Career -->
+        <div class="dropdown">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownLearning" data-bs-toggle="dropdown" aria-expanded="false">
+                Learning & Career
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownLearning">
+                <li><a class="dropdown-item" href="/BBK">BBK / Total Credits</a></li>
+                <li><a class="dropdown-item" href="/LinkedIn">LinkedIn Courses</a></li>
+                <li><a class="dropdown-item" href="/Careers">Possible Careers</a></li>
+                <li><a class="dropdown-item" href="/GraduateCertificates">Graduate Certificates</a></li>
+                <li><a class="dropdown-item" href="/ChoosingClasses">Choosing Classes</a></li>
+                <li><a class="dropdown-item" href="/25Live">25Live Events</a></li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Cards Section -->
+<section class="places-section container mt-5">
+    <div class="place-card" onclick="location.href='/Onboarding'">
+        <img src="/images/map.jpg" alt="Onboarding Docs">
+        <h3>Onboarding & Docs</h3>
+        <p>TA docs, FAQs, slides, newsletters, and Lindner campus map.</p>
+    </div>
+
+    <div class="place-card" onclick="location.href='/Events'">
+        <img src="/images/career.jpeg" alt="Events">
+        <h3>Spotlight & Events</h3>
+        <p>Spotlight on Kris Jones, meet-and-greet sessions, and 25Live event calendar.</p>
+    </div>
+
+    <div class="place-card" onclick="location.href='/AdvisorSessions'">
+        <img src="/images/food.jpg" alt="One-on-One Sessions">
+        <h3>One-on-One Sessions</h3>
+        <p>Schedule meetings with your academic advisor, Kathleen, for personalized guidance.</p>
+    </div>
+
+    <div class="place-card" onclick="location.href='/LearningCareer'">
+        <img src="/images/uc_logo.png" alt="Learning & Career">
+        <h3>Learning & Career</h3>
+        <p>LinkedIn courses, possible careers, graduate certificates, and guidance on choosing classes.</p>
+    </div>
+</section>

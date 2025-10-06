@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Onorading-Project.props" />
+</Project>

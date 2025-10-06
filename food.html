@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recommendations - MSIS Onboarding Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Fixed Top Navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">MSIS Onboarding Portal</a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Campus Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="food.html">Dining & Food</a></li>
+                            <li><a class="dropdown-item" href="bus.html">Transportation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Onboarding Docs</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="onboarding.html">Onboarding Docs</a></li>
+                            <li><a class="dropdown-item" href="ta.html">TA Documents</a></li>
+                            <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
+                            <li><a class="dropdown-item" href="newsletters.html">Newsletters</a></li>
+                            <li><a class="dropdown-item" href="slides.html">Slides</a></li>
+                            <li><a class="dropdown-item" href="lindner-map.html">Lindner Map</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Academic Sessions</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="advisor-sessions.html">One-on-One with Advisor</a></li>
+                            <li><a class="dropdown-item" href="meet-student-ambassadors.html">Meet Student Ambassadors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Learning & Career</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bbk.html">BBK / Total Credits</a></li>
+                            <li><a class="dropdown-item" href="linkedin.html">LinkedIn Courses</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Possible Careers</a></li>
+                            <li><a class="dropdown-item" href="graduate-certificates.html">Graduate Certificates</a></li>
+                            <li><a class="dropdown-item" href="choosing-classes.html">Choosing Classes</a></li>
+                            <li><a class="dropdown-item" href="25live.html">25Live Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5 pt-5">
+        <main role="main" class="pb-3">
+            <!-- Hero Banner -->
+            <section class="food-hero">
+                <div class="hero-overlay">
+                    <h1>Dining at UC</h1>
+                    <p>Discover on-campus food options, coffee spots, and nearby eateries around Lindner Hall.</p>
+                </div>
+            </section>
+
+            <!-- Food Cards Section -->
+            <section class="food-section">
+                <!-- Starbucks in Lindner Hall -->
+                <div class="food-card">
+                    <img src="images/starbucks.jpg" alt="Starbucks Lindner Hall">
+                    <div class="food-card-body">
+                        <h3>Starbucks ☕</h3>
+                        <p>Located on the 1st floor of Lindner Hall. Grab coffee, snacks, and study-friendly vibes.</p>
+                        <a class="btn btn-primary" href="https://www.uc.edu/campus-life/food/locations-hours/cafes.html#lcobs" target="_blank">View Hours</a>
+                    </div>
+                </div>
+
+                <!-- Subway Near Campus -->
+                <div class="food-card">
+                    <img src="images/subway.jpg" alt="Subway">
+                    <div class="food-card-body">
+                        <h3>Subway 🥪</h3>
+                        <p>Fresh sandwiches and salads near campus, perfect for a quick meal between classes.</p>
+                        <a class="btn btn-primary" href="https://www.uc.edu/campus-life/food/locations-hours/food-court.html" target="_blank">View Hours</a>
+                    </div>
+                </div>
+
+                <!-- TUC Food Court -->
+                <div class="food-card">
+                    <img src="images/sslc_foodcourt.jpg" alt="TUC Food Court">
+                    <div class="food-card-body">
+                        <h3>TUC Food Court 🍔</h3>
+                        <p>Multiple dining options including pizza, Asian cuisine, and grab-and-go choices.</p>
+                        <a class="btn btn-primary" href="https://www.uc.edu/campus-life/food/locations-hours/food-court.html" target="_blank">View Hours</a>
+                    </div>
+                </div>
+
+                <!-- Campus Convenience Stores -->
+                <div class="food-card">
+                    <img src="images/convenience_store.jpg" alt="Convenience Store">
+                    <div class="food-card-body">
+                        <h3>Campus Convenience Stores 🛒</h3>
+                        <p>Quick snacks, drinks, and essentials around campus for busy students.</p>
+                        <a class="btn btn-primary" href="https://www.uc.edu/campus-life/food/locations-hours/convenience-stores.html" target="_blank">More Information</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container text-center py-3">
+            &copy; 2025 - MSIS Onboarding Portal - <a href="privacy.html">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

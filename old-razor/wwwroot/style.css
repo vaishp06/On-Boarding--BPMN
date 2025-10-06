@@ -1,0 +1,550 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --uc-red: #e00122;
+    --uc-black: #000000;
+    --uc-white: #ffffff;
+    --uc-gray: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--uc-white);
+    color: var(--uc-black);
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background: var(--uc-black);
+    color: var(--uc-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+    nav a {
+        color: var(--uc-white);
+        margin-left: 1.5rem;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+        nav a:hover {
+            color: var(--uc-red);
+        }
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('/images/campus.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--uc-white);
+    text-align: center;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        background: rgba(0,0,0,0.6);
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+}
+
+    section h2 {
+        text-align: center;
+        color: var(--uc-red);
+        margin-bottom: 2rem;
+    }
+
+/* Footer */
+footer {
+    background: var(--uc-black);
+    color: var(--uc-white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+/* ---------- Landing Page Styles ---------- */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    color: #333;
+}
+
+.landing-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-bottom: 6px solid #e00122;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+/* Cards Section */
+.cards-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+    .cards-section h2 {
+        color: #e00122;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        color: #e00122;
+        margin-top: 15px;
+        font-weight: 600;
+    }
+
+    .card p {
+        padding: 0 15px 25px;
+        font-size: 14px;
+        color: #555;
+    }
+/* --- UC Theme Base --- */
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-image {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+    .hero-text h1 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: white;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        color: #f0f0f0;
+    }
+
+/* --- Quick Links Bar --- */
+.quick-links-bar {
+    background-color: #e00122;
+    padding: 10px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.quick-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quick-link,
+.dropbtn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    .quick-link:hover,
+    .dropbtn:hover {
+        color: #ffd700;
+    }
+
+/* --- Dropdown Menu --- */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: #333;
+    min-width: 200px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: #333;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- Cards Section --- */
+.cards-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+    .cards-section h2 {
+        color: #e00122;
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        padding: 10px;
+        color: #e00122;
+        font-weight: 600;
+    }
+/* ===== Global Font & Styling ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e00122;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+
+.nav-links a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+    .nav-links a:hover, .dropbtn:hover {
+        color: #ffd700;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: #333;
+    min-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+    .dropdown-content a {
+        color: #333;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f2f2f2;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    position: relative;
+    margin-top: 70px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    animation: fadeUp 1.5s ease;
+}
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+.cta-button {
+    background-color: #ffd700;
+    color: #e00122;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .cta-button:hover {
+        background-color: #fff;
+    }
+
+/* ===== Quick Links Section ===== */
+.quick-links-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+    .quick-links-section h2 {
+        color: #e00122;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 0 20px;
+    scroll-behavior: smooth;
+}
+
+.card {
+    flex: 0 0 300px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0;
+    }
+
+.card-text {
+    padding: 15px;
+}
+
+.card h3 {
+    color: #e00122;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.fade-in {
+    animation: fadeUp 1.5s ease;
+}
