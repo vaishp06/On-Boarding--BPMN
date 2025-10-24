@@ -2,6 +2,8 @@
 
 This is a static HTML/CSS/JS version of the MSIS Onboarding Portal, converted from ASP.NET Core Razor Pages.
 
+This is a static HTML/CSS/JS version of the MSIS Onboarding Portal, converted from ASP.NET Core Razor Pages.
+
 ## 📁 Structure
 
 ```
