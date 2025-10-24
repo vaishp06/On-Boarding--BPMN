@@ -33,8 +33,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="onboarding.html">Onboarding Docs</a></li>
                             <li><a class="dropdown-item" href="ta.html">TA Documents</a></li>
-                            <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
-                            <li><a class="dropdown-item" href="newsletters.html">Newsletters</a></li>
+                            <li><a class="dropdown-item" href="faqs.html">FAQs & Newsletters</a></li>
                             <li><a class="dropdown-item" href="slides.html">Slides</a></li>
                             <li><a class="dropdown-item" href="lindner-map.html">Lindner Map</a></li>
                         </ul>
@@ -42,7 +41,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#">Academic Sessions</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="advisor-sessions.html">One-on-One with Advisor</a></li>
+                            <li><a class="dropdown-item" href="advisor-sessions.html">One-on-One Sessions</a></li>
                             <li><a class="dropdown-item" href="meet-student-ambassadors.html">Meet Student Ambassadors</a></li>
                         </ul>
                     </li>
@@ -64,50 +63,178 @@
 
     <div class="container mt-5 pt-5">
         <main role="main" class="pb-3">
-            <h1>Onboarding Resources</h1>
-            <p>Welcome to the MSIS program! Find all your onboarding documents and resources here.</p>
-            <!-- Add onboarding content here -->
-            <section class="mb-5">
-                <h2 class="mb-3">Essential Documents</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="docs/MSIS-Orientation-Guide.pdf" target="_blank">MSIS Orientation Guide (PDF)</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="docs/Academic-Calendar.pdf" target="_blank">Academic Calendar</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="docs/Student-Handbook.pdf" target="_blank">Student Handbook</a>
-                    </li>
-                </ul>
+            <!-- Hero Section -->
+            <section class="onboarding-hero text-center">
+                <div class="hero-overlay">
+                    <h1>Onboarding Resources</h1>
+                    <p>Welcome to the MSIS program! Find all your onboarding documents and resources here.</p>
+                </div>
             </section>
-            
-            <section class="mb-5">
-                <h2 class="mb-3">Onboarding Timeline</h2>
-                <ol class="list-group list-group-numbered">
-                    <li class="list-group-item">Complete online orientation modules</li>
-                    <li class="list-group-item">Attend welcome session with program director</li>
-                    <li class="list-group-item">Meet your academic advisor</li>
-                    <li class="list-group-item">Register for classes</li>
-                    <li class="list-group-item">Explore campus resources and student services</li>
-                </ol>
+
+            <!-- Essential Documents Section -->
+            <section class="container mt-5 mb-5">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">Essential Documents</h2>
+                            <p class="text-muted">Download important onboarding materials</p>
+                        </div>
+                        <div class="document-cards-grid">
+                            <!-- Document Card 1 -->
+                            <div class="doc-card">
+                                <div class="doc-icon-wrapper">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png" alt="Calendar" class="doc-icon">
+                                </div>
+                                <h4 class="doc-title">Academic Calendar</h4>
+                                <p class="doc-description">Important dates and deadlines for Fall 2025</p>
+                                <a href="https://www.uc.edu/about/registrar/calendars/fall-2025/dates-deadlines.html" target="_blank" class="btn-download">
+                                    <span>View Calendar</span>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- Document Card 2 -->
+                            <div class="doc-card">
+                                <div class="doc-icon-wrapper">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Orientation" class="doc-icon">
+                                </div>
+                                <h4 class="doc-title">Orientation Schedule</h4>
+                                <p class="doc-description">Graduate student orientation events and schedule</p>
+                                <a href="https://grad.uc.edu/student-life/events/orientation/schedule.html" target="_blank" class="btn-download">
+                                    <span>View Schedule</span>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <!-- Document Card 3 -->
+                            <div class="doc-card">
+                                <div class="doc-icon-wrapper">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2721/2721294.png" alt="Curriculum" class="doc-icon">
+                                </div>
+                                <h4 class="doc-title">MSIS Curriculum</h4>
+                                <p class="doc-description">Degree requirements and course curriculum</p>
+                                <a href="https://webapps2.uc.edu/ecurriculum/DegreePrograms/Home/MajorMap/10193" target="_blank" class="btn-download">
+                                    <span>View Curriculum</span>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            
-            <section class="mb-5">
-                <h2 class="mb-3">Helpful Links</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="https://business.uc.edu/graduate-programs/msis.html" target="_blank">MSIS Program Overview</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://www.uc.edu/campus-life.html" target="_blank">Campus Life at UC</a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://www.uc.edu/registrar.html" target="_blank">Registrar & Course Registration</a>
-                    </li>
-                </ul>
+
+            <!-- Onboarding Timeline Section -->
+            <section class="container mb-5">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">Onboarding Timeline</h2>
+                            <p class="text-muted">Follow these steps for a successful start</p>
+                        </div>
+                        <div class="timeline-wrapper">
+                            <div class="timeline-step-card">
+                                <div class="step-number">
+                                    <span>1</span>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Complete Online Orientation Modules</h4>
+                                    <p>Access the online portal and complete all required modules</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-step-card">
+                                <div class="step-number">
+                                    <span>2</span>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Meet Your Academic Advisor</h4>
+                                    <p>Schedule a meeting with Kathleen Barker for course planning</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-step-card">
+                                <div class="step-number">
+                                    <span>3</span>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Attend Welcome Session with Program Director</h4>
+                                    <p>Meet Prof. Kris Jones and learn about program expectations</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-step-card">
+                                <div class="step-number">
+                                    <span>4</span>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Register for Classes</h4>
+                                    <p>Complete course registration through the UC portal</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-step-card">
+                                <div class="step-number">
+                                    <span>5</span>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Explore Campus Resources and Student Services</h4>
+                                    <p>Familiarize yourself with libraries, labs, and support services</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            
+
+            <!-- Helpful Links Section -->
+            <section class="container mb-5">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">Helpful Links</h2>
+                            <p class="text-muted">Quick access to important resources</p>
+                        </div>
+                        <div class="links-grid">
+                            <a href="https://business.uc.edu/graduate-programs/msis.html" target="_blank" class="link-card-external">
+                                <div class="link-icon">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965879.png" alt="Program">
+                                </div>
+                                <h5>MSIS Program Overview</h5>
+                                <p>Learn about program structure and requirements</p>
+                                <span class="link-arrow">→</span>
+                            </a>
+
+                            <a href="https://www.uc.edu/campus-life.html" target="_blank" class="link-card-external">
+                                <div class="link-icon">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3524/3524388.png" alt="Campus">
+                                </div>
+                                <h5>Campus Life at UC</h5>
+                                <p>Discover student organizations and activities</p>
+                                <span class="link-arrow">→</span>
+                            </a>
+
+                            <a href="https://www.uc.edu/registrar.html" target="_blank" class="link-card-external">
+                                <div class="link-icon">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Registrar">
+                                </div>
+                                <h5>Registrar & Course Registration</h5>
+                                <p>Register for classes and manage your schedule</p>
+                                <span class="link-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </div>
 

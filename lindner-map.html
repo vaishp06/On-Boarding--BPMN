@@ -1,45 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lindner College Floor Plan</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f9f9f9;
-    }
-    h1 {
-      margin-bottom: 1rem;
-    }
-    iframe {
-      border: 1px solid #ccc;
-    }
-    .download {
-      margin-top: 1rem;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lindner College Floor Plan - MSIS Onboarding Portal</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h1>Lindner College of Business Floor Plan</h1>
-  <p>Use the embedded viewer below or download the PDF directly.</p>
+    <!-- Fixed Top Navbar -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand bg-white shadow-sm py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">MSIS Onboarding Portal</a>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Campus Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="food.html">Dining & Food</a></li>
+                            <li><a class="dropdown-item" href="bus.html">Transportation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Resources & Guides</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="onboarding.html">Getting Started</a></li>
+                            <li><a class="dropdown-item" href="ta.html">TA Documents</a></li>
+                            <li><a class="dropdown-item" href="faqs.html">FAQs & Newsletters</a></li>
+                            <li><a class="dropdown-item" href="about-cincy.html">Explore Cincinnati</a></li>
+                            <li><a class="dropdown-item" href="lindner-map.html">Lindner Map</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Academic Sessions</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="advisor-sessions.html">One-on-One Sessions</a></li>
+                            <li><a class="dropdown-item" href="meet-student-ambassadors.html">Meet Student Ambassadors</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">Learning & Career</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="bbk.html">Curriculum & Credits</a></li>
+                            <li><a class="dropdown-item" href="linkedin.html">LinkedIn Courses</a></li>
+                            <li><a class="dropdown-item" href="careers.html">Possible Careers</a></li>
+                            <li><a class="dropdown-item" href="graduate-certificates.html">Graduate Certificates</a></li>
+                            <li><a class="dropdown-item" href="choosing-classes.html">Choosing Classes</a></li>
+                            <li><a class="dropdown-item" href="25live.html">25Live Events</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Embed external PDF -->
-  <iframe
-    src="https://business.uc.edu/content/dam/refresh/business-62/building-lindner/building-lindner-floor-plans-12172018.pdf"
-    width="100%"
-    height="700px"
-  >
-    This browser does not support PDFs. Please download the PDF
-    <a href="https://business.uc.edu/content/dam/refresh/business-62/building-lindner/building-lindner-floor-plans-12172018.pdf"></a>.
-  </iframe>
+    <!-- Hero Banner -->
+    <section class="lindner-map-hero text-center">
+        <div class="hero-overlay">
+            <h1>Lindner College Floor Plans</h1>
+            <p>Navigate your way around the Carl H. Lindner College of Business</p>
+        </div>
+    </section>
 
-  <!-- Download link -->
-  <div class="download">
-    <a href="https://business.uc.edu/content/dam/refresh/business-62/building-lindner/building-lindner-floor-plans-12172018.pdf" target="_blank">
-      Download Floor Plan PDF
-    </a>
-  </div>
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Intro Section -->
+        <section class="text-center mb-5">
+            <h2 class="section-title">Find Your Way Around Lindner Hall</h2>
+            <p class="lead text-muted">Explore the floor plans to locate classrooms, offices, study spaces, and facilities throughout the building.</p>
+        </section>
+
+        <!-- Quick Access Cards -->
+        <section class="mb-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Location">
+                        </div>
+                        <h4>Building Address</h4>
+                        <p>2925 Campus Green Drive<br>Cincinnati, OH 45221</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2838/2838912.png" alt="Hours">
+                        </div>
+                        <h4>Building Hours</h4>
+                        <p>Monday - Friday: 7:00 AM - 10:00 PM<br>Saturday - Sunday: 8:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2721/2721294.png" alt="Facilities">
+                        </div>
+                        <h4>Key Facilities</h4>
+                        <p>Classrooms, Study Rooms, Computer Labs, Career Center, Advisors</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PDF Viewer Section -->
+        <section class="mb-5">
+            <div class="pdf-viewer-container">
+                <div class="pdf-header">
+                    <h3>Interactive Floor Plan Viewer</h3>
+                    <a href="https://business.uc.edu/content/dam/refresh/business-62/building-lindner/building-lindner-floor-plans-12172018.pdf"
+                       target="_blank"
+                       class="btn-download-pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                        </svg>
+                        Download PDF
+                    </a>
+                </div>
+
+                <div class="pdf-embed">
+                    <iframe
+                        src="https://business.uc.edu/content/dam/refresh/business-62/building-lindner/building-lindner-floor-plans-12172018.pdf#view=FitH"
+                        width="100%"
+                        height="800px"
+                        style="border: none; border-radius: 8px;"
+                        loading="lazy">
+                    </iframe>
+
+                    <!-- Fallback message if iframe doesn't load -->
+                    <div class="pdf-fallback" style="display: none; padding: 3rem; text-align: center;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png" alt="PDF" style="width: 80px; margin-bottom: 1rem;">
+                        <h4>PDF Viewer Not Supported</h4>
+                        <p>Your browser doesn't support embedded PDFs. Please click the download button above to view the floor plans.</p>
+                        <a href="https://business.uc.edu/content/dam/refresh/business-62/building-lindner/building-lindner-floor-plans-12172018.pdf"
+                           target="_blank"
+                           class="btn btn-primary mt-3"
+                           style="background: linear-gradient(135deg, #e00122 0%, #aa001a 100%); border: none; padding: 0.75rem 2rem; border-radius: 25px; color: white; text-decoration: none; display: inline-block;">
+                            Open PDF in New Tab
+                        </a>
+                    </div>
+
+                    <script>
+                        // Check if iframe loaded successfully
+                        setTimeout(function() {
+                            const iframe = document.querySelector('.pdf-embed iframe');
+                            const fallback = document.querySelector('.pdf-fallback');
+
+                            if (!iframe.contentDocument || iframe.contentDocument.body.innerHTML === '') {
+                                iframe.style.display = 'none';
+                                if (fallback) fallback.style.display = 'block';
+                            }
+                        }, 3000);
+                    </script>
+                </div>
+            </div>
+        </section>
+
+        <!-- Helpful Tips Section -->
+        <section class="mb-5">
+            <h3 class="text-center mb-4" style="color: #e00122; font-weight: 700;">📍 Navigation Tips</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="tip-box">
+                        <span class="tip-number">1</span>
+                        <div class="tip-content">
+                            <h5>First Floor</h5>
+                            <p>Main entrance, Career Center, Starbucks, and the Innovation Hub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tip-box">
+                        <span class="tip-number">2</span>
+                        <div class="tip-content">
+                            <h5>Second Floor</h5>
+                            <p>Academic advising offices, student services, and study spaces</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tip-box">
+                        <span class="tip-number">3</span>
+                        <div class="tip-content">
+                            <h5>Third & Fourth Floors</h5>
+                            <p>Classrooms, computer labs, and faculty offices</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tip-box">
+                        <span class="tip-number">4</span>
+                        <div class="tip-content">
+                            <h5>Study Spaces</h5>
+                            <p>Multiple study rooms available for reservation through the library system</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Virtual Tour CTA -->
+        <section class="mb-5">
+            <div class="virtual-tour-banner text-center">
+                <h3>🏛️ Take a Virtual Tour</h3>
+                <p class="mb-4">Experience Lindner Hall from anywhere in the world with our interactive virtual tour!</p>
+                <a href="https://business.uc.edu/about/building-lindner.html" target="_blank" class="btn-virtual-tour">
+                    Explore Virtual Tour
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 8px;">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container text-center py-3">
+            &copy; 2025 - MSIS Onboarding Portal - <a href="privacy.html">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
