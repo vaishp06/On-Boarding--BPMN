@@ -2135,3 +2135,951 @@ footer {
         font-size: 1.1rem;
     }
 }
+
+/* ===== Graduate Certificates Page ===== */
+.certificates-hero {
+    position: relative;
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+}
+
+.why-certificates-banner {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    border: 2px solid #e00122;
+}
+
+.why-certificates-banner h3 {
+    color: #e00122;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.reason-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.reason-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.15);
+}
+
+.reason-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.reason-card h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.reason-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.certificate-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.certificate-card:hover {
+    box-shadow: 0 8px 30px rgba(224, 1, 34, 0.15);
+    transform: translateY(-5px);
+}
+
+.certificate-header {
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.certificate-badge {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.certificate-header h4 {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+.certificate-subtitle {
+    color: rgba(255,255,255,0.9);
+    margin: 0.5rem 0 0 0;
+    font-size: 1rem;
+}
+
+.certificate-body {
+    padding: 2rem;
+}
+
+.certificate-body h5 {
+    color: #e00122;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.certificate-body ul {
+    margin-bottom: 1rem;
+}
+
+.certificate-info {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #e00122;
+}
+
+.info-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #e00122;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    color: #aa001a;
+    transform: translateX(5px);
+}
+
+.application-steps {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.apply-step {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.apply-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.15);
+}
+
+.apply-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+}
+
+.contact-cta {
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+}
+
+.contact-cta h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-contact {
+    background: white;
+    color: #e00122;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: #aa001a;
+}
+
+/* ===== Career Paths Page ===== */
+.careers-hero {
+    position: relative;
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.6);
+}
+
+.outlook-banner {
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.stat-highlight {
+    padding: 1rem;
+}
+
+.stat-value {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.career-category-title {
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid #e00122;
+}
+
+.career-path-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border-left: 4px solid #e00122;
+}
+
+.career-path-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.15);
+}
+
+.career-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.career-path-card h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.career-salary {
+    color: #e00122;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.career-path-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.skills-needed {
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.employers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.employer-badge {
+    background: white;
+    border: 2px solid #e00122;
+    border-radius: 30px;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.employer-badge:hover {
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    transform: scale(1.05);
+}
+
+.resource-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 2px solid transparent;
+}
+
+.resource-card:hover {
+    border-color: #e00122;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.15);
+}
+
+.resource-card h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.resource-link {
+    color: #e00122;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.resource-link:hover {
+    color: #aa001a;
+}
+
+.success-cta {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 2px solid #e00122;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+}
+
+.success-cta h3 {
+    color: #e00122;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.btn-career {
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-career:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.4);
+    color: white;
+}
+
+/* ===== Room Booking (25Live) Page ===== */
+.booking-hero {
+    position: relative;
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+}
+
+.quick-booking-banner {
+    background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+}
+
+.quick-booking-banner h3 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.btn-book-now {
+    background: white;
+    color: #4CAF50;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-book-now:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: #388E3C;
+}
+
+.room-type-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.room-type-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.15);
+}
+
+.room-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.room-type-card h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.room-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.room-features li {
+    padding: 0.5rem 0;
+    color: #666;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.booking-steps {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.booking-step {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.booking-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.15);
+}
+
+.booking-step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+}
+
+.lindner-room-card {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid #e00122;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.lindner-room-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.15);
+}
+
+.lindner-room-card h5 {
+    color: #e00122;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.room-details {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.room-details span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.tip-card-booking {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    height: 100%;
+}
+
+.tip-card-booking h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.tip-card-booking ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tip-card-booking li {
+    padding: 0.5rem 0;
+    color: #666;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.events-calendar-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+}
+
+.calendar-placeholder {
+    background: white;
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px dashed #e00122;
+}
+
+.calendar-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.btn-view-calendar {
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-view-calendar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.4);
+    color: white;
+}
+
+.alt-booking-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.alt-booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.15);
+}
+
+.help-section {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+}
+
+.help-link {
+    background: white;
+    color: #333;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    border: 2px solid #e00122;
+    transition: all 0.3s ease;
+}
+
+.help-link:hover {
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ===== Choosing Classes Page ===== */
+.choosing-hero {
+    position: relative;
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1600') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.5);
+}
+
+.catalyst-banner {
+    background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.catalyst-banner h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.btn-catalyst {
+    background: white;
+    color: #8B0000;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-catalyst:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: #DC143C;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.tip-card-detailed {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #e00122;
+}
+
+.tip-card-detailed:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.15);
+}
+
+.tip-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tip-emoji {
+    font-size: 2.5rem;
+}
+
+.tip-header h4 {
+    color: #333;
+    font-weight: 700;
+    margin: 0;
+}
+
+.tip-card-detailed p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.tip-action-link {
+    color: #e00122;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.tip-action-link:hover {
+    color: #aa001a;
+    text-decoration: underline;
+}
+
+.sequence-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    height: 100%;
+}
+
+.sequence-card h4 {
+    color: #e00122;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e00122;
+}
+
+.semester-block {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.semester-block h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.semester-block ul {
+    margin-bottom: 1rem;
+}
+
+.credits {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.note-box {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #856404;
+}
+
+.timeline-registration {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item-reg {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.timeline-item-reg:hover {
+    transform: translateX(10px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.15);
+}
+
+.timeline-dot {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.timeline-content h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.resource-card-choosing {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.resource-card-choosing:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.15);
+}
+
+.resource-icon-choosing {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.faq-simple {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.faq-item-simple {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.faq-item-simple:last-child {
+    border-bottom: none;
+}
+
+.faq-item-simple h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.faq-item-simple p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.choosing-cta {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border: 2px solid #e00122;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+}
+
+.choosing-cta h3 {
+    color: #e00122;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary-cta {
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(224, 1, 34, 0.4);
+    color: white;
+}
+
+.btn-secondary-cta {
+    background: white;
+    color: #e00122;
+    border: 2px solid #e00122;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-cta:hover {
+    background: #e00122;
+    color: white;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+    }
+
+    .career-category-title {
+        font-size: 1.2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
