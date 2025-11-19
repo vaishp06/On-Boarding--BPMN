@@ -1925,3 +1925,213 @@ footer {
         font-size: 1.5rem;
     }
 }
+
+/* ===== LinkedIn Learning Page ===== */
+.linkedin-hero {
+    position: relative;
+    height: 60vh;
+    background: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.6);
+}
+
+.access-banner {
+    background: linear-gradient(135deg, #0077b5 0%, #005582 100%);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    color: white;
+}
+
+.access-banner h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.step-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.step-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.step-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #e00122 0%, #aa001a 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 1rem;
+}
+
+.step-card h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.step-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.step-card a {
+    color: #0077b5;
+    font-weight: 600;
+}
+
+.btn-access {
+    background: white;
+    color: #0077b5;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-access:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    color: #005582;
+}
+
+.category-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #e00122;
+}
+
+.course-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+    border-left: 4px solid #0077b5;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 119, 181, 0.15);
+    border-left-color: #e00122;
+}
+
+.course-header {
+    color: #0077b5;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.course-card p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.benefit-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 2px solid transparent;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    border-color: #0077b5;
+    box-shadow: 0 8px 25px rgba(0, 119, 181, 0.15);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h5 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.tips-section {
+    background: linear-gradient(135deg, #fff5f5 0%, #ffffff 100%);
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    border: 2px solid #e00122;
+}
+
+.tips-section h3 {
+    color: #e00122;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.tips-list {
+    list-style: none;
+    padding: 0;
+}
+
+.tips-list li {
+    padding: 0.75rem 0;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tips-list li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .access-banner h3 {
+        font-size: 1.5rem;
+    }
+
+    .category-title {
+        font-size: 1.1rem;
+    }
+}
